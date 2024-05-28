@@ -1,6 +1,6 @@
-let age = 10;
-let age_2 = 18;
-let age_3 = 60;
+const age = 10;
+const age_2 = 18;
+const age_3 = 60;
 
 
 //subtask1
@@ -21,10 +21,10 @@ switch (true) {
 
 //subtask2
 
-let ageValues = [17, 18, 61, "2", "aaa"];
+const ageValues = [17, 18, 61, "2", "aaa"];
 
-for (let i = 0; i < ageValues.length; i++) {
-    let age = ageValues[i];
+for (const i = 0; i < ageValues.length; i++) {
+    const age = ageValues[i];
     
     if (typeof age !== 'number') {
         console.error("Age is not a number");
@@ -41,11 +41,11 @@ for (let i = 0; i < ageValues.length; i++) {
 
 //subtask3
 
-for (let i = 0; i < ageValues.length; i++) {
-    let age = ageValues[i];
+for (const i = 0; i < ageValues.length; i++) {
+    const age = ageValues[i];
     
-    if (!isNaN(age) && !isNaN(parseFloat(age))) {
-        age = parseFloat(age);
+    if (!isNaN(age) && !isNaN(parseInt(age))) {
+        age = parseInt(age);
     }
 
     switch (true) {
@@ -62,5 +62,3 @@ for (let i = 0; i < ageValues.length; i++) {
             console.log("Technical work");
     }
 }
-
-//vs code почему-то у меня выводит результаты не в правильном порядке при выполнении всех трех сабтасков

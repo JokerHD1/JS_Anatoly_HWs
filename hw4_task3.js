@@ -1,8 +1,8 @@
 function checkAge() {
-    let age_2 = 18;
-    let age_3 = 60;
+    const age_2 = 18;
+    const age_3 = 60;
 
-    let inputAge = prompt("Please enter your age:");
+    const inputAge = prompt("Please enter your age:");
 
     if(inputAge === null) {
         return;
